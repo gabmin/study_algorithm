@@ -1,10 +1,9 @@
 def is_number_exist(number, array):
-    result = False
     for num in array:
         if num == number:
-            result = True
+            return True
 
-    return result
+    return False
 
 
 result = is_number_exist
