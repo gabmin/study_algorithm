@@ -4,15 +4,13 @@ input = 20
 def find_prime_list_under_number(number):
     answer = []
 
-    for num in range(number + 1):
-        if num == 1:
-            continue
-        if num == 2 or num == 3:
-            answer.append(num)
-        if num % 2 != 0 and num % 3 != 0:
+    for num in range(2, number + 1):
+        for i in answer:
+            if num % i == 0:
+                break
+        else:
             answer.append(num)
 
-    print(answer)
     return answer
 
 
