@@ -2,7 +2,7 @@ numbers = [1, 1, 1, 1, 1]
 target_number = 3
 
 
-
+# 재귀함수로 모든 경우의 수를 구한 후 원하는 값이 몇 개 있는지 알아낸다.
 def get_count_of_ways_to_target_by_doing_plus_or_minus(array, target):
     total_count = []
 
