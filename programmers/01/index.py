@@ -1,5 +1,61 @@
 from collections import deque
 
+# 내 문제 풀이
+# import copy
+#
+# dr = [-1, 0, 1, 0]
+# dc = [0, 1, 0, -1]
+#
+#
+# def is_accessible_container(r, c, storage, visited):
+#     n = len(storage)
+#     m = len(storage[0])
+#
+#     visited[r][c] = True
+#
+#     for i in range(4):
+#         new_r = r + dr[i]
+#         new_c = c + dc[i]
+#
+#         if r == 0 or r == n - 1 or c == 0 or c == m - 1:
+#             return True
+#         elif storage[new_r][new_c] == '0' and not visited[new_r][new_c] and is_accessible_container(new_r, new_c,
+#                                                                                                     storage, visited):
+#             return True
+#
+#     return False
+#
+#
+# def solution(storage, requests):
+#     for index in range(len(storage)):
+#         storage[index] = list(storage[index])
+#
+#     n = len(storage)
+#     m = len(storage[0])
+#
+#     for alpha in requests:
+#         copy_storage = copy.deepcopy(storage)
+#         if len(alpha) == 1:
+#             for r in range(n):
+#                 for c in range(m):
+#                     visited = [[False] * m for _ in range(n)]
+#                     if copy_storage[r][c] == alpha and is_accessible_container(r, c, copy_storage, visited):
+#                         storage[r][c] = '0'
+#         else:
+#             for r in range(n):
+#                 for c in range(m):
+#                     if storage[r][c] == alpha[0]:
+#                         storage[r][c] = '0'
+#
+#     total_count = 0
+#
+#     for r in range(n):
+#         for c in range(m):
+#             if storage[r][c] != '0':
+#                 total_count += 1
+#
+#     return total_count
+
 def solution(warehouse, requests):
     n = len(warehouse)
     m = len(warehouse[0])
