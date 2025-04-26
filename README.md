@@ -45,13 +45,28 @@ chr(1 + 97) == 'b'
 print(set([1, 3, 5, 7]) & set([3, 7])) # [3, 7]
 ```
 
-## 순회한 결과가 모두 참인지 아닌지 판단하는 함수 (자바스크립트의 Some 비슷)
+## all 내장 함수
+순회한 결과가 모두 참인지 아닌지 판단하는 함수 (자바스크립트의 Some 비슷)
 
 ```python
 if all(len(set(code) & set(q[i])) == ans[i] for i in range(len(q))):
 
 # for i in range(len(q)) 에서 len(set(code) & set(q[i])) == ans[i] 결과 값이 모두 참인지 판단하는 함수
 ```
+
+## zip 내장 함수
+
+```python
+numbers = [1, 2, 3]
+letters = ["A", "B", "C"]
+for pair in zip(numbers, letters):
+    print(pair)
+
+# (1, 'A')
+# (2, 'B')
+# (3, 'C')
+```
+
 
 
 
