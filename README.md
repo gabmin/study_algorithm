@@ -40,3 +40,18 @@ chr(1 + 97) == 'b'
 
 <br/>
 
+## 교집합 구하기
+```python
+print(set([1, 3, 5, 7]) & set([3, 7])) # [3, 7]
+```
+
+## 순회한 결과가 모두 참인지 아닌지 판단하는 함수 (자바스크립트의 Some 비슷)
+
+```python
+if all(len(set(code) & set(q[i])) == ans[i] for i in range(len(q))):
+
+# for i in range(len(q)) 에서 len(set(code) & set(q[i])) == ans[i] 결과 값이 모두 참인지 판단하는 함수
+```
+
+
+
