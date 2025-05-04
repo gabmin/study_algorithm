@@ -4,16 +4,6 @@ board = ["...D..R", ".D.G...", "....D.D", "D....D.", "..D...."]
 
 direction = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
-def move_straight(now_position, direction, n, m):
-    r, c = now_position
-    while board[r][c] != 'D':
-        if 0 <= r < n and 0 <= c < m:
-            r = r + direction[0]
-            c = c + direction[1]
-        else: break
-
-    return [r, c]
-
 def solution(board):
     n = len(board)
     m = len(board[0])
