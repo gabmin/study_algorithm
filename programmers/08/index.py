@@ -38,9 +38,12 @@ def solution(board):
             break
 
         for d in direction:
-            while 0 <= r < n and 0 <= c < m:
-                new_r = r + d[0]
-                new_c = c + d[1]
+            new_r = r + d[0]
+            new_c = c + d[1]
+
+            while board[new_r][new_c] != 'D':
+                if n < new_r < 0 and m < new_c < 0:
+                    break
 
                 if board[new_r][new_c] != 'D' and not [new_r, new_c] in visited:
                     queue.append([r, c])
