@@ -15,7 +15,7 @@ def solution(picks, minerals):
         n = sum(picks) * 5
 
     new_minerals = [[0, 0, 0] for _ in range((len(minerals) // 5 + 1))]
-    for i in range(len(minerals)):
+    for i in range(n):
         if minerals[i] == 'diamond':
             new_minerals[i // 5][0] += 1
         elif minerals[i] == 'iron':
