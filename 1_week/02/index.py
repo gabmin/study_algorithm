@@ -1,20 +1,24 @@
 def find_max_occurred_alphabet(string):
     alphabet_array = [0] * 26
 
-    for word in string:
-        if not word.isalpha():
+    for target_str in string:
+        if not target_str.isalpha():
             continue
-        target_index = ord(word) - ord('a')
-        alphabet_array[target_index] += 1
+
+        target_idx = ord(target_str) - ord('a')
+        alphabet_array[target_idx] += 1
 
     max_index = 0
     max_count = 0
 
     for index in range(len(alphabet_array)):
         if alphabet_array[index] > max_count:
-            max_count = alphabet_array[index]
             max_index = index
+            max_count = alphabet_array[index]
+
     return chr(max_index + ord('a'))
+
+
 
 
 result = find_max_occurred_alphabet

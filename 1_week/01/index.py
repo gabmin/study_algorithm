@@ -1,8 +1,12 @@
 arr = [3, 29, 38, 12, 57, 74, 40, 85, 61]
 
 def find_max_num(array):
+    max_num = 0
+    for num in array:
+        if num > max_num:
+            max_num = num
 
-    return max(array)
+    return max_num
 
 
 print("정답 = 6 / 현재 풀이 값 = ", find_max_num([3, 5, 6, 1, 2, 4]))

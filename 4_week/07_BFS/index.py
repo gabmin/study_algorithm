@@ -30,7 +30,6 @@ def get_d_index_when_rotate_to_left(d):
 def get_d_index_when_go_back(d):
     return (d + 2) % 4
 
-
 def get_count_of_departments_cleaned_by_robot_vacuum(r, c, d, room_map):
     n = len(room_map)
     m = len(room_map[0])
