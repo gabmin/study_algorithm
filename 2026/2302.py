@@ -1,3 +1,6 @@
+# 백준 극장좌석
+# https://www.acmicpc.net/problem/2302
+
 seat_count = 9
 vip_seat_array = [4, 7]
 
