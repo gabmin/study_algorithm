@@ -1,3 +1,5 @@
+# 백준 새로운게임2
+# https://www.acmicpc.net/problem/17837
 import sys
 input = sys.stdin.readline
 
